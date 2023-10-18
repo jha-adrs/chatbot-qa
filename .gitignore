@@ -33,3 +33,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+#python env
+/data/chatbot
+/chatbot
+.env
+/data/processed/
+
+/data/text/

@@ -1,4 +1,4 @@
-import { Client } from '@neondatabase/serverless';
+import { Client } from 'pg';
 import {
   createParser,
   ParsedEvent,
@@ -7,10 +7,6 @@ import {
 
 
 const max_tokens = 1700;
-
-export const config = {
-  runtime: 'edge',
-};
 
 export  async function POST(req)  {
   const { query } = (await req.json());
